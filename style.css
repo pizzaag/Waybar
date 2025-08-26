@@ -1,0 +1,101 @@
+* {
+  font-family: "Monocraft";
+  font-size: 14px;
+  color: #ffffff;
+}
+
+#waybar {
+  background: transparent;
+  padding: 4px 8px;
+}
+
+#tray {
+  background-color: #151312;
+  margin-top: 4px;
+  padding: 4px 10px;
+  border-radius: 8px;
+}
+
+#clock {
+  background-color: #151312;
+  margin-top: 4px;
+  padding: 4px 10px;
+  border-radius: 8px;
+}
+
+#pulseaudio {
+  background-color: #151312;
+  margin-top: 4px;
+  padding: 4px 10px;
+  margin-right: -4px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+#network {
+  background-color: #151312;
+  margin-top: 4px;
+  padding: 4px 10px;
+  margin-right: -4px;
+
+}
+
+#bluetooth {
+  background-color: #151312;
+  margin-top: 4px;
+  margin-right: 8px;
+  padding: 4px 10px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+#battery {
+  background-color: #151312;
+  margin-top: 4px;
+  padding: 4px 10px;
+  margin-right: 0px;
+}
+
+#workspaces {
+  background: #151312;
+  margin-top: 4px;
+  margin-left: 8px;
+  border-radius: 10px;
+  padding: 2px;
+}
+
+#workspaces button {
+    background: #151312;
+    color: #cccccc;
+    padding: 4px 10px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    min-width: 20px;
+}
+
+#workspaces button:first-child {
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+#workspaces button:last-child {
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+#workspaces button.active {
+  background-color: #1f1c1b;
+  padding: 4px 10px;
+  min-width: 40px;
+}
+
+#workspaces button.occupied {
+  color: #1f1c1b;
+}
+
+#custom-musicaagora {
+  background-color: #151312;
+  margin-top: 4px;
+  padding: 4px 10px;
+  border-radius: 8px;
+}
