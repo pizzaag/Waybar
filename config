@@ -1,0 +1,65 @@
+{
+  "style": "~/.config/waybar/style.css",
+  "layer": "top",
+  "position": "top",
+  "modules-left": ["hyprland/workspaces", "custom/space", "tray"],
+  "hyprland/workspaces": {
+    "format": " ",
+  "persistent-workspaces": {
+    "eDP-1": [1, 2, 3]
+  }
+
+  },
+  "modules-center": ["clock"],
+  "modules-right": ["custom/musicaagora", "custom/space", "pulseaudio", "network", "battery", "bluetooth" ],
+
+  "custom/musicaagora": {
+     "exec": "~/.config/waybar/scripts/musicaagora.sh",
+     "interval": 5,
+     "return-type": "text",
+     "tooltip": false,
+     "on-click": "playerctl play-pause"
+  },
+
+  "tray": {
+     "icon-size": 16,
+     "spacing": 8
+  },
+
+    "custom/space": {
+   "format": "   ",
+   "tooltip": false
+  },
+
+  "bluetooth": {
+  "format": "󰂯",
+  "tooltip": "abrir gerencionador bluetooth",
+  "on-click": "blueman-manager"
+  },
+
+  "clock": {
+    "format": "{:%H:%M  %d/%m}",
+    "tooltip": false,
+    "on-click": "gsimplecal"
+  },
+
+  "battery": {
+  "bat": "BAT0",
+  "adapter": "AC",
+  "format": "{icon}",
+  "format-charging": " ",
+  "format-plugged": " ",
+  "format-icons": [" ", " ", " ", " ", " "],
+  "interval": 30
+},
+
+  "network": {
+    "format": " ",
+    "format-disconnected": ""
+  },
+
+  "pulseaudio": {
+    "format": "  {volume}%",
+    "format-muted": ""
+  }
+}
